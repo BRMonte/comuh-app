@@ -28,11 +28,19 @@ gem "jbuilder"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
 
+########################################################
+# COMUH-APP SPECIFIC GEMS
+
 # Use Haml for HTML templates
 gem "haml-rails"
 
 # Convert HTML to Haml
 gem "html2haml"
+
+# Linter formatter for Ruby
+gem "rubocop", require: false
+
+########################################################
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
@@ -58,4 +66,3 @@ group :development do
   # Highlight the fine-grained location where an error occurred [https://github.com/ruby/error_highlight]
   gem "error_highlight", ">= 0.4.0", platforms: [ :ruby ]
 end
-
