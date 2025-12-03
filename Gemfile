@@ -28,8 +28,7 @@ gem "jbuilder"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
 
-########################################################
-# COMUH-APP SPECIFIC GEMS
+############## COMUH-APP SPECIFIC GEMS ##############################
 
 # Use Haml for HTML templates
 gem "haml-rails"
@@ -39,6 +38,9 @@ gem "html2haml"
 
 # Linter formatter for Ruby
 gem "rubocop", require: false
+
+# Authentication
+gem "devise", "~> 4.9"
 
 ########################################################
 
